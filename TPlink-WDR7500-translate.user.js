@@ -61,11 +61,11 @@ var dict_ch2eng_btn = {
 	"帮 助":"Help",
 	"帮助":"Help",
 	"返回":"Back",
-	"上一页": "prev",
+	"返 回":"Back",
+	"上一页": "Prev",
 	"上一步": "Return",
-	"下一页":"next",
+	"下一页":"Next",
 	"下一步":"Next",
-	
 	"添加新条目": "Add a new entry",
 	"增加单个条目": "Add a single entry",
 	"使所有条目生效": "Enable All",
@@ -92,10 +92,12 @@ var dict_ch2eng_btn = {
 	"全部扫描":"Full Scan",
 	"新增文件夹":"New Folder",
 	"名称":"Name",
+	"连 接":"Connect",
+	"断 线":"Disconnect",
+	"未连接":"Not connected",
+	"高级设置":"Advanced Settings",
+	"返 回" : "Back",
 	"bbb":"",
-	"bbb":"",
-	"bbb":"",
-
 };
 
 var dict_ch2eng_title = {
@@ -127,18 +129,16 @@ var dict_ch2eng_title = {
 	"状 态":"Status",
 	"编 辑":"Edit",
 	"bbb":"",
-	"bbb":"",
-	"bbb":"",
-	"bbb":"",
-	"bbb":"",
 }
 
 var dict_ch2eng_description = {
 	"IP地址：":"IP address",
+	"IP 地址：":"IP address",
 	"MAC地址：":"MAC address:",
 	"子网掩码：":"Subnet Mask:",
 	"网关：":"Gateway:",
 	"数据包MTU(字节)：":"Packet MTU (bytes):",
+	"数据包MTU（字节）：":"Packet MTU (bytes):",
 	"当前软件版本：":"Current software version:",
 	"当前硬件版本：":"Current hardware version:",
 	"MAC 地址：":"MAC address:",
@@ -170,12 +170,13 @@ var dict_ch2eng_description = {
 	"PSK密码：":"PSK Password:",
 	"组密钥更新周期：":"Group Key Update Period:",
 	"Radius服务器IP：":"Radius Server IP:",
-	"Radius端口： ":"Radius Port:",
+	"Radius端口：":"Radius Port:",
 	"Radius密码：":"Radius Password:",
 	"WEP密钥格式：":"WEP key format:",
-	//"密钥 1：":"Key 1",
-	//"密钥 2：":"Key 2",
-	//"密钥 3：":"Key 3",
+	"密钥 1：":"Key 1",
+	"密钥 2：":"Key 2",
+	"密钥 3：":"Key 3",
+	"密钥 4：":"Key 4",
 	"密钥选择":"Key selection",
 	"WEP密钥":"WEP key",
 	"密钥类型":"Key Types",
@@ -187,15 +188,23 @@ var dict_ch2eng_description = {
 	"地址租期：":"Address lease:",
 	"本路由器内建的DHCP服务器能自动配置局域网中各计算机的TCP/IP协议。":"The router built-in DHCP server can automatically configure the LAN each computer's TCP / IP protocol.",
 	"本页设置DHCP服务器的静态地址分配功能。":"This page is set up static address assignment DHCP server function.",
-	"bbb":"",
-	"bbb":"",
-	"bbb":"",
-	"bbb":"",
-	"bbb":"",
-	"bbb":"",
-	"bbb":"",
-	"bbb":"",
-	"bbb":"",
+	"不开启无线安全":"Wireless security disabled",
+	"PPPoE连接:":"PPPoE connection:",
+	"上网账号：":"Username:",
+	"上网帐号：":"Username",
+	"上网口令：":"Password:",
+	"确认口令：":"Confirm Password:",
+	"特殊拨号：":"Special dialing:",
+	"第二连接：":"The second connection:",
+	"根据您的需要，请选择对应的连接模式：":"Depending on your needs, please select the corresponding connection mode:",
+	"按需连接，在有访问时自动连接":"Connect on demend",
+	"按需连接，在有访问数据时自动进行连接":"Connect on demend",
+	"自动连接，在开机和断线后自动连接":"Connect automatic",
+	"定时连接，在指定的时间段自动连接":"Connect automatically at specified schedule",
+	"手动连接，由用户手动连接":"Manual connect",
+	"注意：只有当您到“系统工具”菜单的“时间设置”项设置了当前时间后，“定时连接”功能才能生效。":"Note: Correct time setting must be configured",
+	"自动断线等待时间：":"Atomatic disconect idle time",
+	"服务器 IP /域名：":"Server IP / Domain Name:",
 	"bbb":"",
 }
 
@@ -208,9 +217,15 @@ var dict_ch2eng_options = {
 	"十六进制":"Hex",
 	"ASCII码":"ASCII code",
 	"禁用":"Disabled",
-	"bbb":"",
-	"bbb":"",
-	"bbb":"",
+	"自动选择拨号模式":"Automatically select the dialing mode",
+	"正常拨号模式":"Normal dialing mode",
+	"特殊拨号模式1":"Special dial mode 1",
+	"特殊拨号模式2":"Special dial mode 2",
+	"特殊拨号模式3":"Special dial mode 3",
+	"特殊拨号模式4":"Special dial mode 4",
+	"特殊拨号模式5":"Special dial mode 5",
+	"特殊拨号模式6":"Special dial mode 6",
+	"特殊拨号模式7":"Special dial mode 7",
 	"bbb":"",
 }
 
@@ -253,8 +268,15 @@ $('document').ready(function(){
 	// Table cells ALL
 	$('tr>td').each(function() {
 		var target_text = String.trim( $(this).text() );
+		var target_html = String.trim( $(this).html() );
+
 		if( dict_ch2eng_all[target_text] !== undefined && dict_ch2eng_all[target_text].length > 0) {
+			target_html= target_html.replace(target_text,dict_ch2eng_all[target_text]);
+			$(this).html( target_html );
+			
+			/*
 			$(this).text( dict_ch2eng_all[target_text] );
+			*/
 		}
 	});
 
@@ -277,4 +299,3 @@ $('document').ready(function(){
 	});
     
 });
-
