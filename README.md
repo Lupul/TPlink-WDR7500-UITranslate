@@ -29,6 +29,10 @@ a)@include       http://192.168.xx.xx/*
 b) Tools-> Greasemonkey -> Manage user scripts -> Preferences -> Included Pages [ADD] -> http://192.168.xx.xx/*
 
 
+SCREENSHOT
+==========
+![ScreenShot](https://github.com/Lupul/TPlink-WDR7500-UITranslate/raw/master/screenshot.png)
+
 
 =======
 Zollner Robert / 2013 / javascript / TPlink / WDR7500
