@@ -1,12 +1,12 @@
-TPlink-WDR7500-UITranslate
+TPlink WDR7500 WEB-UI Translate
 ==========================
 
 A greasemonkey script that translates the TPlink-WDR7500 web interface from Chinese to English
 
 STATUS
 ======
-Very minimal traslation but enough to get your router up and running
-If there is interest I might translate other section of the Interface
+Very *minimal* traslation but enough to get your router up and running
+If there is interest I might translate other sections of the Interface
 
 
 
@@ -23,10 +23,10 @@ https://github.com/Lupul/TPlink-WDR7500-UITranslate/raw/master/TPlink-WDR7500-tr
 
 
 NOTE:
-If you change the default ip address (192.168.1.1) make sure you update the script file or add
+If you change the default ip address (192.168.1.1) make sure you update the script file or add a
 custom include directive:
-a)@include       http://192.168.xx.xx/*
-b) Tools-> Greasemonkey -> Manage user scripts -> Preferences -> Included Pages [ADD] -> http://192.168.xx.xx/*
+a) @include       http://192.168.xx.xx/*
+b) Tools -> Greasemonkey -> Manage user scripts -> Preferences -> Included Pages [ADD] -> http://192.168.xx.xx/*
 
 
 SCREENSHOT
