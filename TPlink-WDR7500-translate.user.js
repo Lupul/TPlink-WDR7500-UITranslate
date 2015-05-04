@@ -10,9 +10,8 @@
 // ==/UserScript==
 
 var dict_ch2eng = {
-	//En esta zona es donde se traduce el menu de la izquierda
-	//además del submenú
-	//Usando lo siguiente, sirve para saltar un puesto en el submenu
+	//Translation left menu
+	//for a gap
 	//"bbb":"",
 	"运行状态":"Operating status",
 	"设置向导":"Setup Wizard",
@@ -83,7 +82,7 @@ var dict_ch2eng = {
 };
 
 var dict_ch2eng_btn = {
-	//Creo que aqui se traducen los botones a la locura.
+	//Bottoms
 	"保 存":"Save",
 	"保存":"Save",
 	"帮 助":"Help",
