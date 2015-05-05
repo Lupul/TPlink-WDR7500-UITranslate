@@ -10,11 +10,15 @@
 // ==/UserScript==
 
 var dict_ch2eng = {
+	//Translation left menu
+	//for a gap
+	//"bbb":"",
 	"运行状态":"Operating status",
 	"设置向导":"Setup Wizard",
 	"网络参数":"Network parameters",
 		"WAN口设置":"WAN port settings",
 		"LAN口设置":"LAN port settings",
+		"WAN口速率/模式":"WAN port speed/mode",
 		"MAC地址克隆":"MAC address cloning",
 	"无线频段设置":"Wireless band setting",
 	"无线设置 2.4GHz":"2.4GHz wireless settings",
@@ -40,22 +44,45 @@ var dict_ch2eng = {
 	"NAT设置":"NAT settings",
 	"转发规则":"Forwarding rules",
 		"虚拟服务器":"Virtual Server",
-		"bbb":"",
-		"bbb":"",
-		"bbb":"",
+		"特殊应用程序":"Special Applications",
+		"DMZ主机":"DMZ Host",
+		"UPnP设置":"UPnP Settings",
 	"安全功能":"Security Features",
+		"安全设置":"Security Settings",
+		"局域网WEB管理":"LAN Web Management",
+		"远端WEB管理":"Remote Web Management",
 	"家长控制":"Parental Controls",
 	"上网控制":"Internet access control",
+		"规则管理":"Rules Management",
+		"主机列表":"Host List",
+		"访问目标":"Access target",
+		"日程计划":"Schedule",
 	"路由功能":"Routing functions",
+		"静态路由表":"Static Routing Table",
+		"系统路由表":"System routing table",
 	"IP带宽控制":"IP bandwidth control",
+		"控制设置":"Control Settings",
+		"控制规则":"Control Rules",
 	"IP与MAC绑定":"IP and MAC binding",
+		"静态ARP绑定设置":"Static ARP binding settings",
+		"ARP映射表":"ARP table",
 	"动态DNS":"Dynamic DNS",
 	"系统工具":"System Tools",
+		"时间设置":"Datetime management",
+		"诊断工具":"Diagnostic Tools",
+		"软件升级":"Software Upgrade",
+		"恢复出厂设置":"Restore factory settings",
+		"备份和载入配置":"Backup Settings",
+		"重启路由器":"Restart the router",
+		"修改登录口令":"Change Password",
+		"系统日志":"System Log",
+		"流量统计":"Traffic Statistics",
 	"更多TP-LINK产品，请点击查看 >>":"More TP-LINK products Click to view"
 	
 };
 
 var dict_ch2eng_btn = {
+	//Bottoms
 	"保 存":"Save",
 	"保存":"Save",
 	"帮 助":"Help",
