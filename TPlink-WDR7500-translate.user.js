@@ -4,6 +4,7 @@
 // @version       0.1
 // @require       http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js
 // @include       http://192.168.1.1/*
+// @include       http://192.168.1.8/*
 // @include       http://192.168.50.133/*
 // @include       http://192.168.55.5/*
 // @grant         none
